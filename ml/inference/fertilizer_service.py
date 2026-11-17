@@ -3,10 +3,17 @@ Inference engine for Fertilizer Recommendation Module.
 Handles model artifact loading, input feature alignment, and prediction.
 """
 
+import sys
 from pathlib import Path
 from typing import Any
 import pandas as pd
 import joblib
+
+# Ensure ml package is in sys.path and models are available for joblib unpickling
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+import ml.training.models  # noqa: F401
 
 from backend.app.core.logging_config import logger
 

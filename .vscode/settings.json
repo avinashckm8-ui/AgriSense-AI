@@ -1,6 +1,6 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
-  "python.terminal.activateEnvironment": true,
+  "python.defaultInterpreterPath": "C:\\Users\\Avinash H\\AppData\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "python.terminal.activateEnvironment": false,
   "files.autoSave": "afterDelay",
   "editor.formatOnSave": true
 }
